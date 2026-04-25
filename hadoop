@@ -118,3 +118,21 @@ hadoop fs -rm -r /outputbda
 hadoop jar /home/hadoop/Desktop/WC.jar WCDriver /inputbda /outputbda
 hadoop fs -ls /outputbda
 hadoop fs -cat /outputbda/part-00000
+
+
+
+steps
+open eclipse
+file-new-javaproject-WordCount-next-libraries
+-add external jars-hadoop-common-jdiff-copy-open
+-add external jars-hadoop-hdfs-jdiff-copy-open
+-add external jars-hadoop-mapreduce-jdiff-copy-open
+-add external jars-hadoop-yarn-jdiff-copy-open
+finish
+right click on wordcount-new-class-WCMapper.java-finish-paste
+right click on wordcount-new-class-WCDriver.java-finish-paste
+right click on wordcount-new-class-WCReducer.java-finish-paste
+these files should be under src
+rightclick on wordcount-export-browse-desktop-name WC.jar-save-finish
+terminal
+
